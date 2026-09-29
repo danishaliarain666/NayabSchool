@@ -1,0 +1,88 @@
+{
+  "source": "Official Instagram @nayab.h.s.mirwah + Facebook Nayab English Grammar High School Mirwah Gorchani",
+  "school_name": "Nayab English Grammar High School, Mirwah Gorchani",
+  "short_name": "Nayab H.S Mirwah",
+  "tagline": "A Platform For Lifelong Learners",
+  "address": "Mirwah Gorchani, District Mirpur Khas, Sindh, Pakistan",
+  "phone": "03043021844 / 03332867412",
+  "whatsapp_url": "https://wa.me/923043021844",
+  "email": "nayabhtsmirwah@gmail.com",
+  "established_year": "2005",
+  "academic_session": "2025-2026",
+  "principal_name": "Miss Rukhsana Ghulam Murtza Arain",
+  "exam_controller_name": "Miss Rukhsana Ghulam Murtza Arain",
+  "matric_pass_rate": "99.9",
+  "instagram_url": "https://www.instagram.com/nayab.h.s.mirwah/",
+  "facebook_url": "https://www.facebook.com/NayabEnglishGrammarHighSchoolMirwahGorchani",
+  "facebook_profile_url": "https://www.facebook.com/nayab.h.s.mirwah",
+  "facebook_page_name": "Nayab H.S Mirwah",
+  "facebook_profile_name": "Nayab.h.s.Mirwah",
+  "google_maps_query": "Nayab English Grammar High School Mirwah Gorchani",
+  "logo_url": "/uploads/branding/school-logo.svg",
+  "school_photo_url": "/uploads/branding/school-banner.svg",
+  "school_description": "Nayab English Grammar High School, Mirwah Gorchani is a Platform For Lifelong Learners. We provide quality English-medium education in rural Sindh, nurturing students with academic excellence, discipline, moral values, and active participation in school functions and community events.",
+  "hero_title": "Welcome to Nayab English Grammar High School",
+  "hero_subtitle": "A Platform For Lifelong Learners — Mirwah Gorchani",
+  "vision": "To be a leading English-medium institution in Mirwah Gorchani and rural Sindh, producing confident lifelong learners.",
+  "mission": "To develop knowledgeable, disciplined, and morally upright students through innovative teaching, co-curricular activities, and strong community engagement.",
+  "history": "Nayab English Grammar High School serves the community of Mirwah Gorchani, District Mirpurkhas. The school actively shares student achievements, annual functions, independence day celebrations, and daily school life through its official Instagram @nayab.h.s.mirwah and Facebook page Nayab English Grammar High School Mirwah Gorchani.",
+  "principal_message": "Welcome to Nayab English Grammar High School, Mirwah Gorchani. We believe every child is a lifelong learner. Our dedicated team provides quality English-medium education, strong character building, and a bright future for every student in our community.",
+  "gallery_images": [
+    {
+      "title": "School Event",
+      "description": "Nayab English Grammar High School",
+      "image_url": "/uploads/branding/gallery-1.svg",
+      "category": "events",
+      "is_featured": 1
+    },
+    {
+      "title": "Independence Day Celebration",
+      "description": "Flag hoisting ceremony",
+      "image_url": "/uploads/branding/gallery-2.svg",
+      "category": "events",
+      "is_featured": 1
+    },
+    {
+      "title": "Annual School Function",
+      "description": "Students at annual event",
+      "image_url": "/uploads/branding/gallery-3.svg",
+      "category": "annual_function",
+      "is_featured": 1
+    },
+    {
+      "title": "Class Activities",
+      "description": "Learning in classroom",
+      "image_url": "/uploads/branding/gallery-4.svg",
+      "category": "class_activities",
+      "is_featured": 1
+    },
+    {
+      "title": "School Assembly",
+      "description": "Morning assembly",
+      "image_url": "/uploads/branding/gallery-5.svg",
+      "category": "events",
+      "is_featured": 0
+    },
+    {
+      "title": "Student Achievement",
+      "description": "Proud moment",
+      "image_url": "/uploads/branding/gallery-6.svg",
+      "category": "events",
+      "is_featured": 1
+    },
+    {
+      "title": "Annual Function — Students",
+      "description": "School performance",
+      "image_url": "/uploads/branding/gallery-7.svg",
+      "category": "annual_function",
+      "is_featured": 1
+    },
+    {
+      "title": "Sports Day",
+      "description": "Sports activities",
+      "image_url": "/uploads/branding/gallery-8.svg",
+      "category": "events",
+      "is_featured": 0
+    }
+  ]
+}
