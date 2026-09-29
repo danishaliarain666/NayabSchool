@@ -50,11 +50,14 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    api.get('/public/home').then((r) => setData(r.data.data)).catch(console.error).finally(() => setLoading(false));
+    api.get('/public/home')
+      .then((r) => setData(r.data.data))
+      .catch(() => setData({ settings: {}, announcements: [], gallery: [], stats: {} }))
+      .finally(() => setLoading(false));
   }, []);
 
   if (loading) return <LoadingSpinner fullScreen />;
-  const { settings, announcements, gallery, stats } = data || {};
+  const { settings, announcements, gallery, stats } = data || { settings: {}, announcements: [], gallery: [], stats: {} };
   const matricRate = settings?.matric_pass_rate || '99.9';
   const campusGallery = (gallery || []).filter((g) => g.category !== 'sports');
 

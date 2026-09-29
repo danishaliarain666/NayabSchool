@@ -1,0 +1,29 @@
+# Full stack: Node API + React UI on one URL (MySQL credentials required).
+# Import xamp-database/nayab_sms.sql into your cloud MySQL first.
+services:
+  - type: web
+    name: nayab-school-sms
+    runtime: node
+    plan: free
+    buildCommand: npm ci --prefix frontend && npm ci --prefix backend && cd frontend && VITE_API_URL=/api npm run build
+    startCommand: cd backend && node src/server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SERVE_FRONTEND
+        value: '1'
+      - key: DB_NAME
+        value: nayab_sms
+      - key: DB_PORT
+        value: '3306'
+      - key: DB_HOST
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://nayab-school-sms.onrender.com,https://danishaliarain666.github.io

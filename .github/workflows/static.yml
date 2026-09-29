@@ -33,7 +33,7 @@ jobs:
         working-directory: frontend
         env:
           VITE_BASE_PATH: /NayabSchool/
-          VITE_API_URL: /api
+          VITE_API_URL: ${{ secrets.PUBLIC_API_URL || 'https://nayab-school-sms.onrender.com/api' }}
         run: |
           npm ci
           npm run build:pages

@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const path = require('path');
+const fs = require('fs');
 require('./env');
 
 const authRoutes = require('./routes/auth');
@@ -16,7 +17,21 @@ const { resolveDbPort } = require('./env');
 const app = express();
 
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
-app.use(cors({ origin: process.env.FRONTEND_URL || 'http://localhost:5173', credentials: true }));
+const corsOrigins = (process.env.FRONTEND_URL || 'http://localhost:5173')
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
+app.use(
+  cors({
+    origin(origin, cb) {
+      if (!origin) return cb(null, true);
+      if (corsOrigins.includes(origin)) return cb(null, true);
+      if (/^https:\/\/[\w-]+\.github\.io$/i.test(origin)) return cb(null, true);
+      return cb(null, corsOrigins[0] || true);
+    },
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
@@ -46,6 +61,15 @@ app.use('/api/public', publicRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/teacher', teacherRoutes);
 app.use('/api/search', searchRoutes);
+
+const feDist = path.join(__dirname, '../../frontend/dist');
+if (process.env.SERVE_FRONTEND === '1' || (process.env.NODE_ENV === 'production' && fs.existsSync(feDist))) {
+  app.use(express.static(feDist));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.join(feDist, 'index.html'), (err) => (err ? next(err) : undefined));
+  });
+}
 
 app.use(errorHandler);
 
