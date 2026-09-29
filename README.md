@@ -1,5 +1,7 @@
 # Nayab English Grammar High School — School Management System
 
+**GitHub:** [github.com/danishaliarain666/NayabSchool](https://github.com/danishaliarain666/NayabSchool)
+
 A full-stack School Management System for **Nayab English Grammar High School, Mirwah Gorchani**.
 
 ## Tech Stack
@@ -53,7 +55,8 @@ A full-stack School Management System for **Nayab English Grammar High School, M
 ### 1. Clone / open project
 
 ```bash
-cd "D:\University\fyp project\sms"
+git clone https://github.com/danishaliarain666/NayabSchool.git
+cd NayabSchool
 ```
 
 ### 2. Backend setup
