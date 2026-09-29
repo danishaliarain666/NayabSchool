@@ -18,6 +18,8 @@
     "export-xampp-db": "node scripts/export-to-xampp-database.js"
   },
   "dependencies": {
+    "@netlify/blobs": "^11.1.1",
+    "@netlify/database": "^2.0.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -29,7 +31,8 @@
     "multer": "^1.4.5-lts.1",
     "mysql2": "^3.11.3",
     "pdf-parse": "^1.1.1",
-    "pdfkit": "^0.15.0"
+    "pdfkit": "^0.15.0",
+    "serverless-http": "^4.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
