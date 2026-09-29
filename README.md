@@ -2,6 +2,8 @@
 
 **GitHub:** [github.com/danishaliarain666/NayabSchool](https://github.com/danishaliarain666/NayabSchool)
 
+**GitHub Pages (public UI demo):** [danishaliarain666.github.io/NayabSchool](https://danishaliarain666.github.io/NayabSchool/) — static frontend only; **admin/portal data** needs MySQL + backend (run locally with `RUN-WEBSITE.bat` or host the API separately).
+
 A full-stack School Management System for **Nayab English Grammar High School, Mirwah Gorchani**.
 
 ## Tech Stack
